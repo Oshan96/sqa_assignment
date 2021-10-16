@@ -1,3 +1,7 @@
 sqacucumber/target/
 sqacucumber/.idea/
 sqacucumber/*.iml
+sqaPOM/.settings/
+sqaPOM/screenshots/
+sqaPOM/target/
+sqaPOM/test-output/
