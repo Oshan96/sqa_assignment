@@ -27,7 +27,7 @@ public class UserPageTest extends TestBase {
 	TestUtil testUtil;
 	UsersPage usersPage;
 	
-	String sheetName = "contacts";
+	String sheetName = "User";
 	
 	   
 	public UserPageTest(){
@@ -66,17 +66,17 @@ public class UserPageTest extends TestBase {
 
 	//}
 	
-	//@DataProvider
-	//public Object[][] getCRMTestData(){
-		//Object data[][] = TestUtil.getTestData(sheetName);
-		//return data;
-	//}
+	@DataProvider
+	public Object[][] getUserTestData(){
+		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+	}
 	
 	
-	@Test(priority=2)
-	public void validateCreateNewUser(){
+	@Test(priority=2, dataProvider="getUserTestData")
+	public void validateCreateNewUser(String firstName, String lastName, String email){
 		usersPage.clickOnNewUserLink();
-		usersPage.createNewUser("Tom", "Peter", "abc@gmail.com");
+		usersPage.createNewUser(firstName, lastName, email);
 		//contactsPage.createNewContact(title, firstName, lastName, company);
 		
 	}

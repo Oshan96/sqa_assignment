@@ -20,8 +20,7 @@ public class TestUtil extends TestBase {
 	public static long PAGE_LOAD_TIMEOUT = 80;
 	public static long IMPLICIT_WAIT = 80;
 
-	public static String TESTDATA_SHEET_PATH = "/Users/naveenkhunteta/Documents/workspace"
-			+ "/FreeCRMTest/src/main/java/com/crm/qa/testdata/FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "C:\\Users\\Global\\eclipse-workspace\\Try1\\src\\main\\java\\com\\app\\qa\\data\\UserData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;

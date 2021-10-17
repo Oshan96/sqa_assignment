@@ -53,7 +53,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=4)
 	public void validateCreateNewTask(){
 		homePage.clickOnaddTaskButton();
-		homePage.createNewTask("benz11", "manufacturing", "test2");
+		homePage.createNewTask("Quality Check", "30000");
 		//contactsPage.createNewContact(title, firstName, lastName, company);
 		
 	}

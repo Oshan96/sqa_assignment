@@ -71,7 +71,12 @@ public class UsersPage extends TestBase{
         WebElement emailEle = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createUserPanel_emailField\"]")));
         emailEle.sendKeys(email);
         
-        WebElement save = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"components_button_label\"]")));
+        WebElement deptDrop = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createUserPanel_accountInformationSection\"]/div/div[3]/div[2]/div/div[2]/div/div[1]")));
+        deptDrop.click();
+        
+        WebElement deptItem = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createUserPanel_accountInformationSection\"]/div/div[3]/div[2]/div/div[2]/div/div[2]/div/div[1]/div[2]/div[3]")));
+        deptItem.click();
+        WebElement save = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createUserPanel\"]/div[3]/div/div[3]/div[1]")));
         save.click();
 		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@class,'firstNameField inputFieldWithPlaceholder')]")));
 		

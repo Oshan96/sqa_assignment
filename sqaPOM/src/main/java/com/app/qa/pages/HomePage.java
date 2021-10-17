@@ -31,12 +31,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//*[contains(@class,'emptySelection')]")
 	WebElement customerBox;
 
-	//@FindBy(xpath = "//*[contains(text,'selectedItem')]")
-	//WebElement customerBox;
-
-	//@FindBy(xpath = "//a[contains(text(),'Tasks')]")
-	//WebElement tasksLink;
-
+	
 	// Initializing the Page Objects:
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -72,17 +67,24 @@ public class HomePage extends TestBase {
 		
 	}
 	
-	public void createNewTask(String customer, String project, String task){
-		//Select select = new Select(department);
-		//select.selectByVisibleText(dpt);
-		
-		//department.click();
-		//prod.click();
-		
+	public void createNewTask(String taskName, String estimate){
 		
 		WebDriverWait wait = new WebDriverWait(driver, 60);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'selectedItem')]")));
-		driver.findElement(By.xpath("//*[contains(@class,'emptySelection')]")).sendKeys(customer);
+		
+		WebElement custDrop = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/div")));
+        custDrop.click();
+        WebElement cust = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[1]/div/table/tbody/tr[1]/td[1]/div/div/div[2]/div/div[1]/div/div[3]")));
+        cust.click();
+        WebElement prjDrop = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[1]/div/table/tbody/tr[3]/td[1]/div/div")));
+        prjDrop.click();
+        WebElement prj = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[1]/div/table/tbody/tr[3]/td[1]/div/div/div[2]/div/div[1]/div/div[4]")));
+        prj.click();
+        
+        WebElement task = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[3]/div/div[1]/table/tbody/tr[1]/td[1]/input")));
+        task.sendKeys(taskName);
+
+        WebElement est = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[3]/div/div[1]/table/tbody/tr[1]/td[3]/input")));
+        est.sendKeys(estimate);
 		//customerBox.sendKeys(customer);
 		//lastName.sendKeys(ltName);
 		//Email.sendKeys(email);
