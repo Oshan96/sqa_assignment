@@ -1,9 +1,11 @@
-package stepDefinition.user;
+package sqa.stepDefinition.user;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,10 +19,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class CreateUserImpl {
     private WebDriver webDriver;
     private WebDriverWait wait;
+    private Logger logger = LogManager.getLogger();
 
     @Given("^user is on userList page of \"([^\"]*)\"$")
     public void user_is_on_userList_page_of(String link) {
-        System.out.println(link);
+        logger.debug(link);
         this.webDriver = new ChromeDriver();
 
         this.webDriver.get("https://demo.actitime.com/login.do");
@@ -37,6 +40,7 @@ public class CreateUserImpl {
 
         this.webDriver.get(link);
         this.wait = new WebDriverWait(webDriver, 10);
+        logger.info("Successfully logged!");
     }
 
     @When("^user clicks new user button$")

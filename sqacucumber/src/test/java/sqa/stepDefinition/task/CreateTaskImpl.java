@@ -1,4 +1,4 @@
-package stepDefinition.task;
+package sqa.stepDefinition.task;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

@@ -1,4 +1,4 @@
-package testRunner;
+package sqa.testRunner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -9,14 +9,15 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/testResources/features/task",
-        glue = "stepDefinition/task",
+        features = "src/test/testResources/features/user",
+        glue = "sqa/stepDefinition/user",
         plugin = {
                 "pretty",
-                "html:target/cucumber-reports/createTaskReport.html",
+                "html:target/cucumber-reports/createUserReport.html",
                 "json:target/cucumber-reports/json/CucumberTestReport.json",
                 "rerun:target/cucumber-reports/rerun.txt"
         }
 )
-public class CreateTaskRunner {
+public class CreateUserRunner {
+
 }
