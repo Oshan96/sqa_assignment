@@ -14,7 +14,7 @@ import com.app.qa.base.TestBase;
 
 public class ReportsPage extends TestBase {
 	
-	//private static final FluentWait<WebDriver> wait = null;
+	
 
 	@FindBy(xpath = "//*[contains(@class,'graphicButton button createNewReportButton')]")
 	WebElement NewReportButton;
@@ -45,26 +45,27 @@ public class ReportsPage extends TestBase {
 		
 	}
 	
-	public ReportOutputPage createNewReport() {
+	public void createNewReport() {
 		type.click();
 		configure.click();
 		report.click();
-		//WebDriverWait wait = new WebDriverWait(driver, 50);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'addToDashboard')]")));
-		//driver.findElement(By.xpath("//*[contains(@class,'addToDashboard')]")).click();
+		//WebDriverWait wait = new WebDriverWait(driver, 60);
+		//wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#topnav > tbody > tr.secondLevelRow > td.secondLevelCell.selectedColNum3.centered > div > a")));
+		//WebElement ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[2]/div[1]")));
+        //ele.click();
+        //WebElement nameInpt = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[2]/input")));
+        //nameInpt.sendKeys(reportName);
+        //WebElement btnSve = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div[1]/table/tbody/tr[5]/td/div/table/tbody/tr/td[3]")));
+        //btnSve.click(); 
 		
-		//dashBoardLink.click();
-		//reportName.sendKeys("Test Report");
-		return new ReportOutputPage();
-		
+		//verification
+        
+        //WebElement dash_ele = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"topnav\"]/tbody/tr[2]/td[2]/div/a")));
+        //dash_ele.click();
+        
+        
 	}
 	
-	//public void verifyReport() {
-		//WebDriverWait wait = new WebDriverWait(driver, 50);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'addToDashboard')]")));
-		//driver.findElement(By.xpath("//*[contains(@class,'addToDashboard')]")).click();
-		//dashBoardLink.click();
-		//reportName.sendKeys("Test Report");
-	//}
+	
 
 }

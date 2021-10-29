@@ -45,7 +45,7 @@ public class UserPageTest extends TestBase {
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		TestUtil.runTimeInfo("error", "login successful");
-		//testUtil.switchToFrame();
+		
 		usersPage = homePage.clickOnUsersLink();
 	}
 	
@@ -54,17 +54,7 @@ public class UserPageTest extends TestBase {
 		Assert.assertTrue(usersPage.verifyworkLabel(), "departments label is missing on the page");
 	}
 	
-	//@Test(priority=2)
-	//public void selectSingleContactsTest(){
-		//contactsPage.selectContactsByName("test2 test2");
-	//}
 	
-	//@Test(priority=3)
-	//public void selectMultipleContactsTest(){
-		//contactsPage.selectContactsByName("test2 test2");
-		//contactsPage.selectContactsByName("ui uiii");
-
-	//}
 	
 	@DataProvider
 	public Object[][] getUserTestData(){
@@ -77,7 +67,7 @@ public class UserPageTest extends TestBase {
 	public void validateCreateNewUser(String firstName, String lastName, String email){
 		usersPage.clickOnNewUserLink();
 		usersPage.createNewUser(firstName, lastName, email);
-		//contactsPage.createNewContact(title, firstName, lastName, company);
+		
 		
 	}
 	

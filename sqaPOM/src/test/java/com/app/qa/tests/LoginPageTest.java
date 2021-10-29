@@ -20,7 +20,7 @@ public class LoginPageTest extends TestBase {
 	HomePage homePage;
 	
 	public LoginPageTest(){
-		super(); // calling super class constructor
+		super(); 
 	}
 	
 	@BeforeMethod
@@ -39,12 +39,6 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	
-	
-	//@Test(priority=2)
-	//public void LogoImageTest(){
-		//boolean flag = loginPage.validateLogoImage();
-		//Assert.assertTrue(flag);
-	//}
 	
 	@Test(priority=2)
 	public void loginTest(){

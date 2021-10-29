@@ -41,7 +41,14 @@ public class TestBase {
 			String browserName = prop.getProperty("browser");
 			
 			if(browserName.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Global\\Videos\\Year4\\SQA\\chromedriver_win32\\chromedriver.exe");	
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\Global\\Videos\\Year4\\chromedriver_win32\\chromedriver.exe");
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("start-maximized"); 
+				options.addArguments("disable-infobars"); 
+				options.addArguments("--disable-extensions"); 
+				options.addArguments("--disable-gpu"); 
+				options.addArguments("--disable-dev-shm-usage"); 
+				options.addArguments("--no-sandbox"); 
 				driver = new ChromeDriver(); 
 			}
 			else if(browserName.equals("FF")){
@@ -51,7 +58,7 @@ public class TestBase {
 			
 			
 			e_driver = new EventFiringWebDriver(driver);
-			// Now create object of EventListerHandler to register it with EventFiringWebDriver
+			
 			eventListener = new WebEventListener();
 			e_driver.register(eventListener);
 			driver = e_driver;

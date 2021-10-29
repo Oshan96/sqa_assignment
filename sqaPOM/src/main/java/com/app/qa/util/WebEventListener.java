@@ -70,9 +70,7 @@ public class WebEventListener extends TestBase implements WebDriverEventListener
 		System.out.println("Found Element By : " + by.toString());
 	}
 
-	/*
-	 * non overridden methods of WebListener class
-	 */
+	
 	public void beforeScript(String script, WebDriver driver) {
 	}
 

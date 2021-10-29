@@ -23,25 +23,6 @@ public class UsersPage extends TestBase{
 	@FindBy(xpath = "//*[contains(@class,'components_button withPlusIcon')]")
 	WebElement newUserLink;
 	
-	@FindBy(xpath = "//input[contains(@class,'firstNameField inputFieldWithPlaceholder')]")
-	WebElement firstName;
-	
-	@FindBy(name = "lastName")
-	WebElement lastName;
-	
-	@FindBy(name = "email")
-	WebElement Email;
-	
-	@FindBy(name = "Save & Send Invitation")
-	WebElement saveBtn;
-	
-	@FindBy(xpath = "//*[contains(@class,'title')]")
-	WebElement department;
-	
-	@FindBy(xpath = "//*[contains(@text,'Production')]")
-	WebElement prod;
-	
-	
 	// Initializing the Page Objects:
 	public UsersPage() {
 		PageFactory.initElements(driver, this);
@@ -78,15 +59,7 @@ public class UsersPage extends TestBase{
         deptItem.click();
         WebElement save = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createUserPanel\"]/div[3]/div/div[3]/div[1]")));
         save.click();
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@class,'firstNameField inputFieldWithPlaceholder')]")));
 		
-		
-		//WebDriverWait wait = new WebDriverWait(driver, 50);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@class,'title')]")));
-		//driver.findElement(By.xpath("//*[contains(@class,'title')]")).click();
-		//department.click();
-		//prod.click();
-		//saveBtn.click();
 		
 		
 	}

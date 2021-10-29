@@ -56,10 +56,7 @@ public class HomePage extends TestBase {
 		return new ReportsPage();
 	}
 	
-	//public TasksPage clickOnTasksLink(){
-		//tasksLink.click();
-		//return new TasksPage();
-	//}
+	
 	
 	public void clickOnaddTaskButton(){
 		
@@ -85,10 +82,6 @@ public class HomePage extends TestBase {
 
         WebElement est = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"createTasksPopup_content\"]/div[1]/div[1]/div/div[3]/div/div[1]/table/tbody/tr[1]/td[3]/input")));
         est.sendKeys(estimate);
-		//customerBox.sendKeys(customer);
-		//lastName.sendKeys(ltName);
-		//Email.sendKeys(email);
-		//saveBtn.click();
 		
 	}
 	

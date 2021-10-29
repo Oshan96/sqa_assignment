@@ -45,7 +45,7 @@ public class ReportsPageTest extends TestBase {
 		loginPage = new LoginPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		TestUtil.runTimeInfo("error", "login successful");
-	//testUtil.switchToFrame();
+	
 		reportsPage = homePage.clickOnReportsLink();
 	}
 

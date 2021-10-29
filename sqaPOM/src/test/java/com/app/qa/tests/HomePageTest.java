@@ -32,29 +32,24 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=1)
-	public void verifyHomePageTitleTest(){
-		String homePageTitle = homePage.verifyHomePageTitle();
-		Assert.assertEquals(homePageTitle, "actiTIME - Enter Time-Track","Home page title not matched");
-	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void verifyUserNameTest(){
-		//testUtil.switchToFrame();
+		
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void verifyUsersLinkTest(){
-		//testUtil.switchToFrame();
+		
 		usersPage = homePage.clickOnUsersLink();
 	}
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void validateCreateNewTask(){
 		homePage.clickOnaddTaskButton();
 		homePage.createNewTask("Quality Check", "30000");
-		//contactsPage.createNewContact(title, firstName, lastName, company);
+		
 		
 	}
 	
