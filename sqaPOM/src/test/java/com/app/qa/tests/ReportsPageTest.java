@@ -12,7 +12,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 import com.app.qa.base.TestBase;
 import com.app.qa.pages.UsersPage;
@@ -23,6 +25,8 @@ import com.app.qa.util.TestUtil;
 
 
 public class ReportsPageTest extends TestBase {
+	
+	Logger log = null;
 
 	LoginPage loginPage;
 	HomePage homePage;
@@ -32,6 +36,8 @@ public class ReportsPageTest extends TestBase {
 	
 	public ReportsPageTest(){
 		super();
+		System.setProperty("log4j.configurationFile", "log4j.properties");
+        log = LogManager.getLogger();
 		
 }
 
@@ -40,6 +46,7 @@ public class ReportsPageTest extends TestBase {
 	public void setUp() throws InterruptedException {
 	
 		initialization();
+		log.info("Browser launched");
 		testUtil = new TestUtil();
 		usersPage = new UsersPage();
 		loginPage = new LoginPage();
@@ -54,6 +61,7 @@ public class ReportsPageTest extends TestBase {
 	public void verifyCreateNewReport(){
 		reportsPage.clickOnNewReportLink();
 		reportsPage.createNewReport(); 
+		log.info("New Report created and validated");
 		
 	}
 	

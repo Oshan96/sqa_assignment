@@ -12,7 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.app.qa.base.TestBase;
 import com.app.qa.pages.UsersPage;
@@ -21,6 +22,8 @@ import com.app.qa.pages.LoginPage;
 import com.app.qa.util.TestUtil;
 
 public class UserPageTest extends TestBase {
+	
+	Logger log = null;
 	
 	LoginPage loginPage;
 	HomePage homePage;
@@ -32,6 +35,8 @@ public class UserPageTest extends TestBase {
 	   
 	public UserPageTest(){
 			super();
+			System.setProperty("log4j.configurationFile", "log4j.properties");
+	        log = LogManager.getLogger();
 			
 	}
 	
@@ -40,6 +45,7 @@ public class UserPageTest extends TestBase {
 	public void setUp() throws InterruptedException {
 		
 		initialization();
+		log.info("Browser launched");
 		testUtil = new TestUtil();
 		usersPage = new UsersPage();
 		loginPage = new LoginPage();
@@ -52,6 +58,7 @@ public class UserPageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyworkLabel(){
 		Assert.assertTrue(usersPage.verifyworkLabel(), "departments label is missing on the page");
+		log.info("Work label verfied");
 	}
 	
 	
@@ -67,6 +74,7 @@ public class UserPageTest extends TestBase {
 	public void validateCreateNewUser(String firstName, String lastName, String email){
 		usersPage.clickOnNewUserLink();
 		usersPage.createNewUser(firstName, lastName, email);
+		log.info("New user created and validated");
 		
 		
 	}

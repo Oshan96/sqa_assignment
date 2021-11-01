@@ -2,11 +2,12 @@ package com.app.qa.tests;
 
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
 
 import com.app.qa.base.TestBase;
 import com.app.qa.pages.HomePage;
@@ -14,13 +15,15 @@ import com.app.qa.pages.LoginPage;
 
 public class LoginPageTest extends TestBase {
 	
-	Logger log = Logger.getLogger(LoginPageTest.class);
+	Logger log = null;
 	
 	LoginPage loginPage;
 	HomePage homePage;
 	
 	public LoginPageTest(){
 		super(); 
+		System.setProperty("log4j.configurationFile", "log4j.properties");
+        log = LogManager.getLogger();
 	}
 	
 	@BeforeMethod
