@@ -1,0 +1,30 @@
+[INFO ] 2021-10-29 14:00:15.212 [main] LoginImpl - Navigated to login page!
+[INFO ] 2021-10-29 14:00:15.497 [main] LoginImpl - Filled login details!
+[INFO ] 2021-10-29 14:00:15.649 [main] LoginImpl - Clicked login button!
+[INFO ] 2021-10-29 14:00:15.650 [main] LoginImpl - Successfully logged!
+[INFO ] 2021-10-29 14:00:15.650 [main] LoginImpl - Successfully closed the browser!
+[INFO ] 2021-10-29 14:03:14.223 [main] CreateReportImpl - Successfully logged!
+[INFO ] 2021-10-29 14:03:20.681 [main] CreateReportImpl - Navigated to reports page!
+[INFO ] 2021-10-29 14:03:21.479 [main] CreateReportImpl - Clicked on add new report button!
+[INFO ] 2021-10-29 14:03:23.015 [main] CreateReportImpl - Selected report type and clicked configure!
+[INFO ] 2021-10-29 14:03:25.679 [main] CreateReportImpl - Clicked generateHTML button!
+[INFO ] 2021-10-29 14:03:26.267 [main] CreateReportImpl - Clicked add to dashboard button!
+[INFO ] 2021-10-29 14:03:26.382 [main] CreateReportImpl - Entered report name!
+[INFO ] 2021-10-29 14:03:26.470 [main] CreateReportImpl - Saved report!
+[INFO ] 2021-10-29 14:03:28.069 [main] CreateReportImpl - Clicked report dashboard button!
+[INFO ] 2021-10-29 14:03:28.092 [main] CreateReportImpl - Successfully added report!
+[INFO ] 2021-10-29 14:03:28.096 [main] CreateReportImpl - Successfully closed the browser!
+[INFO ] 2021-10-29 14:06:04.633 [main] CreateTaskImpl - Successfully logged!
+[INFO ] 2021-10-29 14:06:10.298 [main] CreateTaskImpl - Navigated to taskList page!
+[INFO ] 2021-10-29 14:06:10.707 [main] CreateTaskImpl - Clicked add new task button!
+[INFO ] 2021-10-29 14:06:12.051 [main] CreateTaskImpl - Selected customer and project!
+[INFO ] 2021-10-29 14:06:12.370 [main] CreateTaskImpl - Filled task details!
+[INFO ] 2021-10-29 14:06:12.489 [main] CreateTaskImpl - Successfully created new task!
+[INFO ] 2021-10-29 14:06:12.490 [main] CreateTaskImpl - Successfully closed the browser!
+[INFO ] 2021-10-29 14:09:10.087 [main] CreateUserImpl - Successfully logged!
+[INFO ] 2021-10-29 14:09:14.367 [main] CreateUserImpl - Navigated to userList page!
+[INFO ] 2021-10-29 14:09:15.040 [main] CreateUserImpl - User clicked add new user button!
+[INFO ] 2021-10-29 14:09:16.111 [main] CreateUserImpl - User details filled!
+[INFO ] 2021-10-29 14:09:16.394 [main] CreateUserImpl - Selected department!
+[INFO ] 2021-10-29 14:09:16.520 [main] CreateUserImpl - Successfully created new user!
+[INFO ] 2021-10-29 14:09:17.116 [main] CreateUserImpl - Successfully closed the browser!
