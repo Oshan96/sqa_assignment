@@ -51,11 +51,21 @@ public class LoginTest {
         WebElement submitBtn = this.webDriver.findElement(By.xpath("//*[@id=\"loginButton\"]"));
         submitBtn.click();
         logger.info("Clicked login button!");
+        try{
+            WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"ErrorsTable\"]/tbody/tr/td[2]/table/tbody/tr/td/span")));
+            if(errorMessage.isDisplayed()) {
+                logger.info("Invalid credentials!");
+                return;
+            }
+        } catch (Exception ex) {
+
+        }
+
+        logger.info("Successfully logged!");
     }
 
     @Then("close the browser")
     public void close_the_browser() {
-        logger.info("Successfully logged!");
         logger.info("Successfully closed the browser!");
         this.webDriver.close();
     }

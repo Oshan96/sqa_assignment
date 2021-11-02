@@ -1,0 +1,5 @@
+2021-11-02 17:58:50 INFO  LoginTest:35 - Navigated to login page!
+2021-11-02 17:58:50 INFO  LoginTest:46 - Filled login details!
+2021-11-02 17:58:50 INFO  LoginTest:54 - Clicked login button!
+2021-11-02 17:58:50 INFO  LoginTest:59 - Successfully logged!
+2021-11-02 17:58:50 INFO  LoginTest:64 - Successfully closed the browser!

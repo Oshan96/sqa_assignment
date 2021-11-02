@@ -8,3 +8,6 @@ Feature: logging in
     Examples:
       | username | password |
       | admin | manager |
+      | abc | manager |
+      | admin | bbb |
+      | bbcb | kajd |

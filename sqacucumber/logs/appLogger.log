@@ -28,3 +28,69 @@
 [INFO ] 2021-10-29 14:09:16.394 [main] CreateUserImpl - Selected department!
 [INFO ] 2021-10-29 14:09:16.520 [main] CreateUserImpl - Successfully created new user!
 [INFO ] 2021-10-29 14:09:17.116 [main] CreateUserImpl - Successfully closed the browser!
+[INFO ] 2021-11-02 17:59:18.386 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 17:59:18.633 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 17:59:18.773 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 17:59:18.817 [main] LoginTest - Successfully logged!
+[INFO ] 2021-11-02 17:59:18.818 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 17:59:25.974 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 17:59:26.114 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 17:59:26.257 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 17:59:26.297 [main] LoginTest - Successfully logged!
+[INFO ] 2021-11-02 17:59:26.298 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 17:59:33.293 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 17:59:33.414 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 17:59:33.546 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 17:59:33.593 [main] LoginTest - Successfully logged!
+[INFO ] 2021-11-02 17:59:33.594 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 17:59:40.027 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 17:59:40.175 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 17:59:40.321 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 17:59:40.343 [main] LoginTest - Successfully logged!
+[INFO ] 2021-11-02 17:59:40.345 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 18:01:40.979 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:01:41.165 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:02:49.452 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:02:53.106 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:05:55.108 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:05:55.358 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:05:55.478 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:06:05.623 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:06:05.772 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:06:05.877 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:06:14.614 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:06:14.752 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:06:14.846 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:06:23.330 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:06:23.464 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:06:23.587 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:08:24.312 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:08:24.516 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:08:24.604 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:08:32.113 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:08:32.273 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:08:32.379 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:08:43.096 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:08:43.245 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:08:43.354 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:08:53.308 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:12:43.776 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:12:43.995 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:12:44.122 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:12:49.573 [main] LoginTest - Successfully logged!
+[INFO ] 2021-11-02 18:12:49.574 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 18:12:56.258 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:12:56.413 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:12:56.543 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:12:57.980 [main] LoginTest - Invalid credentials!
+[INFO ] 2021-11-02 18:12:57.981 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 18:13:04.661 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:13:04.822 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:13:04.957 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:13:06.184 [main] LoginTest - Invalid credentials!
+[INFO ] 2021-11-02 18:13:06.185 [main] LoginTest - Successfully closed the browser!
+[INFO ] 2021-11-02 18:13:13.286 [main] LoginTest - Navigated to login page!
+[INFO ] 2021-11-02 18:13:13.422 [main] LoginTest - Filled login details!
+[INFO ] 2021-11-02 18:13:13.556 [main] LoginTest - Clicked login button!
+[INFO ] 2021-11-02 18:13:14.746 [main] LoginTest - Invalid credentials!
+[INFO ] 2021-11-02 18:13:14.748 [main] LoginTest - Successfully closed the browser!
